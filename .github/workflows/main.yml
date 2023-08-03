@@ -26,7 +26,7 @@ jobs:
           
       - name: Start Docker
         run: |
-          sudo service docker start
+          service docker start
 
       - name: Run Bash 
         run: 
