@@ -10,8 +10,8 @@ jobs:
   DockerDemo:
     runs-on: ubuntu-latest
 
-    container:
-      image: openjdk:8-jdk
+#    container:
+#      image: openjdk:8-jdk
 
   
     steps:
@@ -19,11 +19,11 @@ jobs:
         uses: actions/Checkout@master
 
       # Step 1: 配置Java 8环境
-#      - name: Set up Java 8
-#        uses: actions/setup-java@v2
-#        with:
-#          java-version: 8
-#          distribution: adopt
+      - name: Set up Java 8
+        uses: actions/setup-java@v2
+        with:
+          java-version: 8
+          distribution: adopt
       
       
       # Step 2: 配置Docker环境
