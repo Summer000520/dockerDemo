@@ -1,0 +1,20 @@
+name: DockerDemo
+
+on:
+  push:
+    branches:
+      - master
+
+
+jobs:
+  DockerDemo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/Checkout@master
+
+      - name: Run Bash 
+        run: 
+          ./DockerDemo.bash
+        
